@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Style</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@0;1&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Gelasio:ital@0;1&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-container">
+
+        <div class="header-left-logo">
+          <a href="{{ url('/') }}"><img src="public/images/logo/logo.png"></a>
+        </div>
+      
+        <div class="header-links-container">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Products">Products</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+        </div>
+      
+        <div class="header-icon-container">
+          <a href="#saved-item"><img src="public/images/vector/fav-item.png"></a>
+          <a href="#account"><img src="public/images/vector/user.png"></a>
+          <a href="#cart"><img src="public/images/vector/cart.png"></a>
+        </div>
+      
+      </div>
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="public/images/slider/slider-1.png"></div>
+                <div class="slide"><img src="public/images/slider/slider-1.png"></div>
+                <div class="slide"><img src="public/images/slider/slider-1.png"></div>
+            </div>
+              
+                <button class="slider-btn" id="prevBtn" onclick="prevSlide()">❮</button>
+                <button class="slider-btn" id="nextBtn" onclick="nextSlide()">❯</button>
+        </div>
+
+        
+            <div class="season-container">
+            
+                <div class="left-item">
+                    <div class="left-item-heading">
+                        <h1>This Season</h1>
+                    </div>
+                    <div class="left-item-description">
+                        <h2><span>|</span>New Arrivals <br>for winter season</h2>
+                    </div>
+                    <div class="left-item-description-content">
+                        <p>Spring has arrived, we come with fashion choices that are suitable to be combined with this season, lots of formal and informal cloaths.</p>
+                    </div>
+                    <button>Show all Collections</button>
+                </div>
+            
+                <div class="right-item">
+                    <div class="product-container">
+                        <div class="item-container item-container-img1">
+                            <div class="fav-item">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="details-left">
+                                <h6>Black Sweetshirt</h6>
+                                <p>Jhanvi's Brand</p>
+                            </div>
+                            <div class="details-right">
+                                <div class="details-price">
+                                    <p>Rs. 500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="product-container">
+                        <div class="item-container item-container-img2">
+                            <div class="fav-item">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="details-left">
+                                <h6>White T-Shirt</h6>
+                                <p>Helen's Brand</p>
+                            </div>
+                            <div class="details-right">
+                                <div class="details-price">
+                                    <p>Rs. 500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="product-container">
+                        <div class="item-container item-container-img3">
+                            <div class="fav-item">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+            
+                        <div class="details">
+                            <div class="details-left">
+                                <h6>Levender Hoodie</h6>
+                                <p>Nike's Brand</p>
+                            </div>
+                            <div class="details-right">
+                                <div class="details-price">
+                                    <p>Rs. 500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </div>
+
+            <div class="saving-container">
+
+                <div class="saving-container-heading">
+                    <h3><span>|</span> Big Saving Zone</h3>
+                </div>
+            
+                <div class="saving-product-container">
+            
+                    <div class="saving-product saving-product-img1"></div>
+                    <div class="saving-product saving-product-img2"></div>
+                    <div class="saving-product saving-product-img3"></div>
+            
+                </div>
+            
+            </div>
+
+            <div class="feature-container">
+                <div class="feature-container-heading">
+                    <h1>Feature Product</h1>
+                </div>
+                <h2><span>|</span> Feature Product</h2>
+                <div class="feature-product-container">
+                    <div class="feature-item-container">
+                        <div class="feature-item">
+                            <div class="feature-product-item feature-product-item-img1"></div>
+                                <div class="feature-item-detail">
+                                    <div class="feature-item-detail-left">
+                                        <h6>Hoodies & Sweetshirt</h6>
+                                        <p>Explore Now!</p>
+                                    </div>
+                                    <div class="feature-item-detail-right">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-product-item feature-product-item-img2"></div>
+                            <div class="feature-item-detail">
+                                <div class="feature-item-detail-left">
+                                    <h6>Coats & Parkas</h6>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="feature-item-detail-right">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-product-item feature-product-item-img3"></div>
+                            <div class="feature-item-detail">
+                                <div class="feature-item-detail-left">
+                                    <h6>Tees & T-shirts</h6>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="feature-item-detail-right">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-product-item feature-product-item-img4"></div>
+                            <div class="feature-item-detail">
+                                <div class="feature-item-detail-left">
+                                    <h6>Boxers</h6>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="feature-item-detail-right">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-product-item feature-product-item-img5"></div>
+                            <div class="feature-item-detail">
+                                <div class="feature-item-detail-left">
+                                    <h6>Boxers</h6>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="feature-item-detail-right">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <footer class="footer">
+                  <div class="left-icon">
+                    <img src="public/images/logo/logo.png">
+                  </div>
+                
+                  <div class="rigth-icon">
+                  <a href="#facebook"><img src="public/images/vector/fb-small.png"></a>
+                  <a href="#instagram"><img src="public/images/vector/insta-small.png"></a>
+                  </div>
+                 
+                <div class="container">
+                    <div class="container-item">
+                        <ul>
+                            <h4>Company</h4>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Euphoria Blog</a></li>
+                            <li><a href="#">Euphoriastan</a></li>
+                            <li><a href="#">Collaboration</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="container-item">
+                        <ul>
+                            <h4>More Info</h4>
+                            <li><a href="#">Term and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                     
+                    <div class="container-item">
+                        <ul>
+                            <h4>Need Help</h4>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <div class="container-item">
+                        <ul>
+                            <h4>Location</h4>   
+                            <li>support@euphoria.in</li>
+                            <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
+                            <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+                        </ul>
+                    </div>
+                
+                  </div>
+                
+                  <hr>
+                  <p>Copyright © 2024 WO'WWORLD.All rights reserved.</p>
+                  <br>
+                </footer>
+
+        <script src="index.js"></script>
+</body>
+</html>
